@@ -1,7 +1,6 @@
 from learned_dictionary import AudioDictionaryLearner
 
-import cr.sparse.pursuit.omp as omp
-import cr.sparse.pursuit.sp as sp
+from cr.sparse.pursuit import mp, omp, sp
 import cr.sparse.cvx.adm.yall1 as bp
 
 import jax.numpy as jnp

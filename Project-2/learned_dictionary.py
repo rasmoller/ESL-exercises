@@ -8,7 +8,7 @@ import pandas as pd
 from sklearn.decomposition import DictionaryLearning
 
 class AudioDictionaryLearner:
-    def __init__(self, train_wav_dir, train_csv_dir, test_wav_dir, test_csv_dir):
+    def __init__(self, train_wav_dir: str, train_csv_dir: str, test_wav_dir: str, test_csv_dir: str):
         self.train_wav_dir = train_wav_dir
         self.train_csv_dir = train_csv_dir
         self.test_wav_dir = test_wav_dir
