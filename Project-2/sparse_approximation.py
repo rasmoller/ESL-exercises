@@ -1,4 +1,4 @@
-from learned_dictionary import AudioDictionaryLearner
+from learned_dictionary import AudioDictionary
 
 from cr.sparse.pursuit import mp, omp, sp
 import cr.sparse.cvx.adm.yall1 as bp
@@ -7,7 +7,7 @@ import jax.numpy as jnp
 from jax import config
 config.update("jax_enable_x64", True)
 
-A_1 = AudioDictionaryLearner().learn_dictionary()
+A_1 = AudioDictionary().learn_dictionary()
 A_2 = jnp.array()
 
 class SparseApproximation():
